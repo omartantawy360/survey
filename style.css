@@ -1,0 +1,130 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #ede4f0, #cbb4d4, #a88bc1);
+    overflow-y: auto;
+    direction: ltr; /* نأكد إن اتجاه الصفحة من الشمال لليمين */
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    color: #4a2c6d;
+}
+
+.header p {
+    font-size: 1.2em;
+    color: #6a4c93;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #4a2c6d;
+    display: block;
+    font-size: larger;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 15px 0;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* مجموعات الـ radio و checkbox */
+.radio-group,
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 10px 0 15px 0;
+    padding-left: 5px;
+}
+
+/* التنسيق الصحيح للـ label عشان الكلام يظهر على الشمال */
+.radio-label,
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    flex-direction: row; /* ← زر على الشمال والكلام على اليمين */
+    font-weight: normal;
+    color: #4a2c6d;
+    margin: 2px 0;
+    cursor: pointer;
+    text-align: left;
+}
+
+.input-radio,
+.input-checkbox {
+    margin-right: 12px;
+    transform: scale(1.1);
+}
+
+textarea {
+    resize: vertical;
+}
+
+button,
+input[type="submit"] {
+    background-color: #6a4c93;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: fit-content;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #4a2c6d;
+}
+button{
+    align-self: center;
+    width: 100%;
+}
